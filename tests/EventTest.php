@@ -4,8 +4,8 @@ namespace Tests;
 
 use Event;
 use Orchestra\Testbench\TestCase;
-use Tests\Fixtures\TestModel;
 use Tests\Fixtures\TestEloquentModel;
+use Tests\Fixtures\TestModel;
 use Tests\Fixtures\TestWorkflowListener;
 use Workflow;
 use ZeroDaHero\LaravelWorkflow\Events\TransitionEvent;

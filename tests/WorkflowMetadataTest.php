@@ -47,7 +47,7 @@ class WorkflowMetadataTest extends TestCase
         ];
 
         $registry = new WorkflowRegistry($config, null, new Dispatcher());
-        $subject = new TestObject;
+        $subject = new TestObject();
         $workflow = $registry->get($subject);
 
         $this->assertEquals(
