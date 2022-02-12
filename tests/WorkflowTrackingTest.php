@@ -36,7 +36,7 @@ class WorkflowTrackingTest extends TestCase
         ];
 
         $registry = new WorkflowRegistry($config, $registryConfig, new Dispatcher());
-        $subject = new TestObject;
+        $subject = new TestObject();
         $workflow = $registry->get($subject);
 
         $this->expectException(DuplicateWorkflowException::class);
@@ -68,7 +68,7 @@ class WorkflowTrackingTest extends TestCase
         ];
 
         $registry = new WorkflowRegistry($config, $registryConfig, new Dispatcher());
-        $subject = new TestObject;
+        $subject = new TestObject();
         $workflow = $registry->get($subject);
 
         $registry->addFromArray('straight', $config['straight']);
@@ -101,7 +101,7 @@ class WorkflowTrackingTest extends TestCase
         ];
 
         $registry = new WorkflowRegistry($config, $registryConfig, new Dispatcher());
-        $subject = new TestObject;
+        $subject = new TestObject();
         $workflow = $registry->get($subject);
 
         $this->expectException(RegistryNotTrackedException::class);

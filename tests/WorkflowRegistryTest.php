@@ -47,7 +47,7 @@ class WorkflowRegistryTest extends BaseWorkflowTestCase
         ];
 
         $registry = new WorkflowRegistry($config, null, new Dispatcher());
-        $subject = new TestObject;
+        $subject = new TestObject();
         $workflow = $registry->get($subject);
 
         $markingStoreProp = new ReflectionProperty(Workflow::class, 'markingStore');
@@ -86,7 +86,7 @@ class WorkflowRegistryTest extends BaseWorkflowTestCase
         ];
 
         $registry = new WorkflowRegistry($config, null, new Dispatcher());
-        $subject = new TestObject;
+        $subject = new TestObject();
         $workflow = $registry->get($subject);
 
         $markingStoreProp = new ReflectionProperty(Workflow::class, 'markingStore');
@@ -126,7 +126,7 @@ class WorkflowRegistryTest extends BaseWorkflowTestCase
         ];
 
         $registry = new WorkflowRegistry($config, null, new Dispatcher());
-        $subject = new TestObject;
+        $subject = new TestObject();
         $workflow = $registry->get($subject);
 
         $markingStoreProp = new ReflectionProperty(Workflow::class, 'markingStore');
@@ -169,7 +169,7 @@ class WorkflowRegistryTest extends BaseWorkflowTestCase
         ];
 
         $registry = new WorkflowRegistry($config, null, new Dispatcher());
-        $subject = new TestObject;
+        $subject = new TestObject();
         $workflow = $registry->get($subject);
 
         $markingStoreProp = new ReflectionProperty(Workflow::class, 'markingStore');
@@ -216,7 +216,7 @@ class WorkflowRegistryTest extends BaseWorkflowTestCase
         ];
 
         $registry = new WorkflowRegistry($config, null, new Dispatcher());
-        $subject = new TestObject;
+        $subject = new TestObject();
         $workflow = $registry->get($subject);
 
         $markingStoreProp = new ReflectionProperty(Workflow::class, 'markingStore');
@@ -254,7 +254,7 @@ class WorkflowRegistryTest extends BaseWorkflowTestCase
         ];
 
         $registry = new WorkflowRegistry($config, null, new Dispatcher());
-        $subject = new TestObject;
+        $subject = new TestObject();
         $workflow = $registry->get($subject);
 
         $markingStoreProp = new ReflectionProperty(Workflow::class, 'markingStore');
@@ -296,7 +296,7 @@ class WorkflowRegistryTest extends BaseWorkflowTestCase
         ];
 
         $registry = new WorkflowRegistry($config, null, new Dispatcher());
-        $subject = new TestCustomObject;
+        $subject = new TestCustomObject();
         $workflow = $registry->get($subject);
 
         $markingStoreProp = new ReflectionProperty(Workflow::class, 'markingStore');
@@ -337,7 +337,7 @@ class WorkflowRegistryTest extends BaseWorkflowTestCase
         ];
 
         $registry = new WorkflowRegistry($config, null, new Dispatcher());
-        $subject = new TestObject;
+        $subject = new TestObject();
         $workflow = $registry->get($subject);
 
         $markingStoreProp = new ReflectionProperty(Workflow::class, 'markingStore');
